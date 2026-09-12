@@ -71,7 +71,7 @@ const projects = [
   },
   {
     id: "carousel_project_5",
-    title: "Bathroom Repair And Paint",
+    title: "Bathroom Remodel",
     images: [
       "images/items/Bathroom Repair And Paint 1.jpeg",
       "images/items/Bathroom Repair And Paint 2.jpeg",
@@ -83,6 +83,13 @@ const projects = [
     title: "Carpet Removal and Install",
     images: [
       "images/items/Carpet Removal and Install 1.jpeg"
+    ]
+  },
+  {
+    id: "carousel_project_7",
+    title: "Interior & Exterior Painting",
+    images: [
+      ""
     ]
   }
 ];
