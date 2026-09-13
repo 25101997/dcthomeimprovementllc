@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="author" content="Francisco López">
   <meta name="description" content="DCT Home Improvement LLC - Professional bathroom, kitchen, basement, deck, painting, drywall, carpentry and flooring services.">
   <meta name="keywords" content="DCT Home Improvement, remodeling, bathroom remodeling, kitchen remodeling, basement remodeling, decks, porches, painting, drywall, plaster, carpentry, flooring">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>DCT Home Improvement LLC</title>
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18296674627"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -21,11 +17,10 @@
 
     gtag('config', 'AW-18296674627');
   </script>
-
-  <script src="js/scripts.js" defer></script>
+  <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 
   <!-- Floating WhatsApp -->
   <a class="whatsapp-float"
@@ -33,7 +28,7 @@
      target="_blank"
      rel="noopener"
      aria-label="Contact us on WhatsApp">
-    <img src="images/WhatsApp-logo.png" alt="WhatsApp">
+    <img src="/images/WhatsApp-logo.png" alt="WhatsApp">
   </a>
 
   <!-- Top bar -->
@@ -54,7 +49,7 @@
     <div class="site-container header-inner">
 
       <a class="brand" href="#home">
-        <img src="images/Transparente Green Logo.png" alt="DCT Home Improvement LLC">
+        <img src="/images/Transparente Green Logo.png" alt="DCT Home Improvement LLC">
         <div class="brand-copy">
           <strong>DCT</strong>
           <span>HOME IMPROVEMENT LLC</span>
@@ -129,7 +124,7 @@
         </div>
 
         <div class="hero-image"
-             style="background-image: url('images/items/Portada.jpeg');"
+             style="background-image: url('/images/items/Portada.jpeg');"
              aria-label="Home improvement project">
         </div>
       </div>
@@ -206,7 +201,7 @@
       <div class="site-container about-grid">
 
         <div class="about-image"
-             style="background-image: url('images/items/Deck Upgrade To Composite 2.jpeg');"
+             style="background-image: url('/images/items/Deck Upgrade To Composite 2.jpeg');"
              aria-label="DCT Home Improvement project">
         </div>
 
@@ -249,7 +244,7 @@
         </div>
 
         <div class="reviews-plugin">
-          [trustindex no-registration=google]
+          <?php echo do_shortcode('[trustindex no-registration=google]'); ?>
         </div>
       </div>
     </section>
@@ -286,7 +281,7 @@
         </div>
 
         <div class="contact-form-card">
-          [wpforms id="35"]
+          <?php echo do_shortcode('[wpforms id="35"]'); ?>
         </div>
       </div>
     </section>
@@ -317,7 +312,7 @@
         <h2>Tell Us About Your Project</h2>
       </div>
 
-      [wpforms id="35"]
+      <?php echo do_shortcode('[wpforms id="35"]'); ?>
     </div>
   </div>
 
@@ -327,7 +322,7 @@
 
       <div>
         <a class="brand brand-footer" href="#home">
-          <img src="images/Transparent Original Logo Symbol.png" alt="DCT Home Improvement LLC">
+          <img src="/images/Transparent Original Logo Symbol.png" alt="DCT Home Improvement LLC">
           <div class="brand-copy">
             <strong>DCT</strong>
             <span>HOME IMPROVEMENT LLC</span>
@@ -365,10 +360,6 @@
       <span>Your Vision. Our Craftsmanship.</span>
     </div>
   </footer>
-
-  <script src="js/data.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-
+  <?php wp_footer(); ?>
 </body>
 </html>
