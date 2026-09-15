@@ -88,29 +88,29 @@ const projects = [
     id: "carousel_project_7",
     title: "Exterior Painting",
     images: [
-      "images/items/Exterior Painting 1",
-      "images/items/Exterior Painting 2",
-      "images/items/Exterior Painting 3",
-      "images/items/Exterior Painting 4",
-      "images/items/Exterior Painting 5",
-      "images/items/Exterior Painting 6",
-      "images/items/Exterior Painting 7",
+      "images/items/Exterior Painting 1.jpeg",
+      "images/items/Exterior Painting 2.jpeg",
+      "images/items/Exterior Painting 3.jpeg",
+      "images/items/Exterior Painting 4.jpeg",
+      "images/items/Exterior Painting 5.jpeg",
+      "images/items/Exterior Painting 6.jpeg",
+      "images/items/Exterior Painting 7.jpeg"
     ]
   },
   {
     id: "carousel_project_8",
     title: "Interior Painting",
     images: [
-      "images/items/Interior Painting 1",
-      "images/items/Interior Painting 2",
+      "images/items/Interior Painting 1.jpeg",
+      "images/items/Interior Painting 2.jpeg"
     ]
   },
   {
     id: "carousel_project_9",
     title: "Deck",
     images: [
-      "images/items/Deck 1",
-      "images/items/Deck 2",
+      "images/items/Deck 1.jpeg",
+      "images/items/Deck 2.jpeg"
     ]
   }
 ];

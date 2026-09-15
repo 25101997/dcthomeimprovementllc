@@ -6,25 +6,21 @@ function dct_enqueue_assets() {
         'bootstrap',
         'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css',
         array(),
-        null
+        '5.0.2'
     );
 
     wp_enqueue_style(
         'dct-style',
         get_template_directory_uri() . '/css/style.css',
         array('bootstrap'),
-        null
-    );
-
-    wp_enqueue_script(
-        'jquery'
+        filemtime(get_template_directory() . '/css/style.css')
     );
 
     wp_enqueue_script(
         'dct-scripts',
         get_template_directory_uri() . '/js/scripts.js',
-        array('jquery'),
-        null,
+        array(),
+        filemtime(get_template_directory() . '/js/scripts.js'),
         true
     );
 
@@ -32,7 +28,7 @@ function dct_enqueue_assets() {
         'dct-data',
         get_template_directory_uri() . '/js/data.js',
         array('dct-scripts'),
-        null,
+        filemtime(get_template_directory() . '/js/data.js'),
         true
     );
 
@@ -40,7 +36,7 @@ function dct_enqueue_assets() {
         'bootstrap-js',
         'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js',
         array(),
-        null,
+        '5.0.2',
         true
     );
 }
